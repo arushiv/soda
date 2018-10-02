@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=2.7
+  - pdfminer
+  - pdfrw
+  - certifi
+  - beautifulsoup4
+  - jinja2
+  - requests       
