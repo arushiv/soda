@@ -25,7 +25,7 @@ import os
 import tempfile
 import shutil
 import requests
-import requests_kerberos
+# import requests_kerberos
 import certifi
 import optparse
 import urllib
@@ -64,8 +64,8 @@ parser.add_option("-o", "--outputDir", action="store", type="string", dest="outp
 parser.add_option("-b", "--browserBuildID", action="store", type="string", dest="browserBuildID", help="Genome build ID (required)")
 parser.add_option("-t", "--galleryTitle", action="store", type="string", dest="galleryTitle", default=default_title, help="Gallery title (optional)")
 parser.add_option("-g", "--browserURL", action="store", type="string", dest="browserURL", default=default_genome_browser_url, help="Genome browser URL (optional)")
-parser.add_option("-u", "--browserUsername", action="store", type="string", dest="browserUsername", default=default_genome_browser_username, help="Genome browser username (optional)")
-parser.add_option("-p", "--browserPassword", action="store", type="string", dest="browserPassword", default=default_genome_browser_password, help="Genome browser password (optional)")
+parser.add_option("-u", "--browserUsername", action="store", type="string", dest="browserUsername", default=default_genome_browser_username, help="Genome browser username (optional). DISABLE FOR NOW")
+parser.add_option("-p", "--browserPassword", action="store", type="string", dest="browserPassword", default=default_genome_browser_password, help="Genome browser password (optional). DISABLE FOR NOW")
 parser.add_option("-y", "--useKerberosAuthentication", action="store_true", dest="useKerberosAuthentication", default=default_use_kerberos_authentication, help="Use Kerberos authentication (optional)")
 parser.add_option("-d", "--addMidpointAnnotation", action="store_true", dest="midpointAnnotation", default=default_midpoint_annotation, help="Add midpoint annotation underneath tracks (optional)")
 parser.add_option("-i", "--addIntervalAnnotation", action="store_true", dest="intervalAnnotation", default=default_interval_annotation, help="Add interval annotation underneath tracks (optional)")
